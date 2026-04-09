@@ -1,0 +1,28 @@
+{
+  "mcp_version": "2024-11-05",
+  "serverInfo": {
+    "name": "frobyte-byoa-demo",
+    "version": "1.0.0",
+    "description": "A demo Customer Support API for testing Frobyte BYOA onboarding."
+  },
+  "endpoints": [
+    "https://api.example-demo.com/v1"
+  ],
+  "capabilities": {
+    "tools": {
+      "get_customer_data": {
+        "description": "Fetch mock customer details including account balance and status.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "description": "The unique identifier of the customer (e.g., CUST-01)"
+            }
+          },
+          "required": ["customer_id"]
+        }
+      }
+    }
+  }
+}
